@@ -1,0 +1,47 @@
+.h-fit {
+    height: fit-content !important;
+}
+
+.w-fit {
+    width: fit-content !important;
+}
+
+
+.box {
+    background-color: bisque;
+    border-radius: 8px;
+    border: 2px solid burlywood;
+    margin: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+input {
+
+}
+
+.input-button-set {
+    width: fit-content;
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    /* border: 2px solid gray; */
+    background-color: lightsteelblue;
+}
+
+.input-button-set * {
+    all: unset;
+    padding: 10px;
+}
+
+.input-button-set input {
+    
+}
+
+.input-button-set button {
+    background-color: lightseagreen;
+}
+
+.input-button-set button:hover {
+    filter: brightness(1.2);
+}
