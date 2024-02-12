@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es primo? 🦧🦧</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+    <script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/utils.js"></script>
+</head>
+<body data-bs-theme="dark">
+    <div class="container">
+        <div class="row row-cols-auto row-cols-lg-2 justify-content-center my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Es primo?</h5>
+                        <p>Crea una página que nos pida un número por teclado y con un método se lo pasamos por parámetro para que nos indique si es o no un número primo, debe devolver true si es primo sino false.</p>
+                        <p>Un número primo es aquel solo puede dividirse entre 1 y si mismo.</p>
+                        <p>Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group pt-4">
+                    <input
+                        type="number" class="form-control border-primary"
+                        name="numero_primo" id="numero_primo"
+                        placeholder="Tu numero primo?"
+                    >
+                    <button class="text-center btn btn-primary d-block mx-auto" id="comprueba_si_es_primo">Comprueba si es primo</button>
+                </div>
+                <div class="pt-3" id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./ejer.js"></script>
+</body>
+</html>
