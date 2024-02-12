@@ -8,7 +8,3 @@ function activar_contador() {
     while (i<11)
         add_alert('#result', `Contador: ${ i++ }`, 'success')
 }
-
-function obtenerImporteConImpuestos(importe, iva) {
-
-}

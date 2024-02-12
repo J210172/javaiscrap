@@ -8,7 +8,8 @@ function toping_price_button() {
     let price = 1.9;
     let added_price = 0;
     let topping = toping_input.value.toLowerCase();
-    let message = `<p>El helado cuesta “inicialmente” ${ price }.</p>`;
+    let message = `<p>El helado cuesta “inicialmente” ${price}.</p>`;
+    let total;
 
     if (!result || !toping) throw new Error("No hay input#toping o/y div#result")
 
@@ -30,8 +31,9 @@ function toping_price_button() {
     }
 
     if (added_price != 0) {
+        total = (price + added_price).toFixed(2)
         message += `<p>El toping '${topping}' cuesta '${ added_price }'</p>`;
-        message += `<p>El helado con el toping elejido cuesta '${ price + added_price }'</p>`;
+        message += `<p>El helado con el toping elejido cuesta '${total}'</p>`;
     }
 
     add_message('#result', 'Resultado', message, {centered: true});
