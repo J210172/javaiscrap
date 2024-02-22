@@ -12,21 +12,27 @@ function comprueba_si_es_primo_button() {
         throw new Error(message);
     }
     
-    if (es_primo(numero_primo))
-        add_alert('#result', `El numero ${numero_primo} es primo`, 'success');
+    let point = Date.now()
+    let primo = es_primo(numero_primo);
+    let interval = (Date.now() - point) / 1000;
+
+    if (primo)
+        add_alert('#result', `El numero ${numero_primo} es primo (${interval}s)`, 'success');
     else
-        add_alert('#result', `El numero ${numero_primo} no es primo`, 'warning');
+        add_alert('#result', `El numero ${numero_primo} no es primo  (${interval}s)`, 'warning');
 }
 
 /**
- * TODO: fix this shit;
+ * Devuelve true si el numero `num` es primo, devuelve false en caso contrario
  * @param {*} num 
  * @returns 
  */
 function es_primo(num) {
-    for (let i = 1; i < num; i++) {
-        if (num % i == 0)
-            return false; 
+    let max = Math.ceil(num/2);
+    if (num < 1) return false;
+    if (num == 2) return false;
+    for (let i = 2; i < max; i++) {
+        if (num % i == 0) return false; 
     }
     return true;
 }
