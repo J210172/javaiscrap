@@ -7,3 +7,6 @@
 - [2 numero enteros menores al introducido](./ejer_2_enteros_menores/index.html)
 
 ## Nada de la carpeta de 'assets/vendor' es mio
+
+
+<link rel="stylesheet" href="./assets/vendor/bootstrap.min.css">
