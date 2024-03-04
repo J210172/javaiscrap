@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer imagenes</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery-3.7.1.min.js"></script>
+</head>
+<body data-bs-theme="dark">
+    <div class="container">
+        <div class="row row-cols-auto row-cols-lg-2 justify-content-center my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Ejercicio switch</h5>
+                        <p>
+                            Realiza el siguente ejercicio con la estructura "Switch"
+                            Escribe un programa que responda a un usuario que quiere comprar un helado
+                            en una conocida marca de comida rápida cuanto le costará en función del
+                            topping que elija.
+                        </p>
+                        <p>El helado cuesta “inicialmente” 1.90 €.</p>
+                
+                        <p>El formulario pregunta qué topping quiere.</p>
+                        <ul>
+                            <li>
+                                <p>Si dice: nada, el helado cuesta lo mismo que inicialmente.</p>
+                            </li>
+                            <li>
+                                <p>El topping de oreo cuesta 1€ más.</p>
+                            </li>
+                            <li>
+                                <p>El topping de kitkat cuesta 1.50€ más.</p>
+                            </li>
+                            <li>
+                                <p>El topping de brownie cuesta 0.75€ más.</p>
+                            </li>
+                            <li>
+                                <p>El topping de lacasitos cuesta 0.95€ más.</p>
+                            </li>
+                            <li>
+                                <p>En caso de no disponer del topping solicitado por el usuario el programa escribirá por pantalla «no tenemos este topping, lo sentimos.</p>
+                            </li>
+                        </ul>
+                        <p>
+                            A continuación informar del precio del helado sin ningún topping.
+                            Finalmente, el programa escribe por consola el precio del helado con el topping
+                            seleccionado (o ninguno)
+                        </p>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="input-group mb-3 pt-4">
+                    <select class="form-select" aria-label="Elije un animal">
+                        <option value="0" selected>Gatos</option>
+                        <option value="1">Ratas</option>
+                        <option value="2">Monos</option>
+                        <option value="3">Perros</option>
+                    </select>
+                    <button
+                        class="btn btn-primary"
+                        type="button" id="toping_price_button"
+                    >Dame el precio</button>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./ejer.js"></script>
+</body>
+</html>
