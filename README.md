@@ -8,3 +8,6 @@
 - [Comprobador de numeros primos](./ejer_es_primo/index.html)
 
 ## Nada de la carpeta de 'assets/vendor' es mio
+
+
+<link rel="stylesheet" href="./assets/vendor/bootstrap.min.css">
